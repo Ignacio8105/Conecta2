@@ -26,7 +26,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand" href="Index.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="Imagenes/Icono2.png" width="60" alt="Logo de comunica2">
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center" >
@@ -46,29 +46,13 @@
                 <a class="nav-link" aria-disabled="true" style="color: white" href="/Bancos.html">Bancos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true" style="color: white" href="Index.html">Principal</a>
+                <a class="nav-link" aria-disabled="true" style="color: white" href="index.html">Principal</a>
               </li>
             </ul>
            </div>
         </div>
     </nav>
-        <!-- <div class="redes-sociales"> 
-          <a href="https://es-la.facebook.com/" alt="Logo facebook" target="_blank" rel="noopener noreferrer">
-            <i class="redes-sociales-link bi bi-facebook"></i>
-          </a>
-          <a href="https://www.youtube.com/?gl=ES" alt="Logo youtube" target="_blank" rel="noopener noreferrer">
-            <i class="redes-sociales-link bi bi-youtube"></i>
-          </a>
-          <a href="https://www.instagram.com/" alt="Logo instagram" target="_blank" rel="noopener noreferrer">
-            <i class="redes-sociales-link bi bi-instagram"></i>
-          </a>
-          <a href="https://mx.pinterest.com/" alt="Logo pinteres " target="_blank" rel="noopener noreferrer">
-            <i class="redes-sociales-link bi bi-pinterest"></i>
-          </a>
-          <a href="https://www.tiktok.com/es/" alt="Logo tiktok " target="_blank" rel="noopener noreferrer">
-            <i class="redes-sociales-link bi bi-tiktok"></i>
-          </a>-->
-              
+                      
         <!-- Paginas de enlace -->
       <section id="paginas-enlace" class="paginas-enlace seccion-clara d-flex flex-column">
         <h2 class="seccion-titulo texto-negro">Servicios</h2>
@@ -284,7 +268,7 @@
     
   <script>
       function enviarWhatsApp() {
-          var numero = "529934361088"; // Reemplaza con tu número de WhatsApp
+          var numero = "${NUMCEL}"; // Reemplaza con tu número de WhatsApp
           var mensaje = document.getElementById("mensaje").value;
           var url = "https://api.whatsapp.com/send?phone=" + numero + "&text=" + encodeURIComponent(mensaje);
           window.open(url, "_blank");
